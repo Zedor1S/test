@@ -10,4 +10,10 @@ jobs:
     steps:
     - name: Hello world on ubuntu
       run : echo "Hello World"
+    - name: checkout files without clone
+      run : ls -la
+    - name: Clone repo
+      uses: actions/checkout@v1
+    - name: checkout with clone
+      run : ls -la
    
